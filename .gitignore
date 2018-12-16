@@ -4,7 +4,7 @@ linux*
 
 # Built targets
 *.dtb
-zImage
-bzImage
+*zImage
+*bzImage
 *.ext*
 *.tar*
