@@ -6,4 +6,4 @@ Refer to releases for prebuilt files
 
 
 ## Update a release
-./publish.sh -v ${VERSION} -t ${TOKEN} -r snippits/prebuilt-images
+./publish.sh -v ${VERSION} -t ${TOKEN} -r snippits/prebuilt_images
