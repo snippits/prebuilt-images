@@ -1,8 +1,6 @@
 #!/bin/bash -e
 
-RELEASE_FILES=(vexpress-v2p-ca9.dtb)
-RELEASE_FILES+=(zImage)
-RELEASE_FILES+=(rootfs.tar)
+RELEASE_FILES=$(ls arm/busybox/vexpress-* ./x86/busybox/x86_64-*)
 
 # A POSIX variable
 OPTIND=1 # Reset in case getopts has been used previously in the shell.
@@ -45,7 +43,7 @@ if [ "$release_id" = "null" ]; then
     "https://api.github.com/repos/${REPO}/releases" | jq -r --arg version "${VERSION}" '.[] | select(.name == "v"+$version).id')
 fi
 
-for file in "${RELEASE_FILES[@]}"; do
+for file in $RELEASE_FILES; do
     filename=$(basename $file)
     echo "Uploading $file"
     content_type=$(file --mime-type -b ${file})
