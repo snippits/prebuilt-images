@@ -10,6 +10,9 @@ tar -xf $tarfile
 cd ${SCRIPT_PATH}/buildroot-${ver}
 cp ../config-buildroot-${ver} ./.config
 make
-cp ./output/images/* ${SCRIPT_PATH}
-# Remove redundant copies
-rm ${SCRIPT_PATH}/*.ext2
+
+# Copy and rename the generated files
+cd ${SCRIPT_PATH}
+cp ./buildroot-${ver}/output/images/bzImage ./x86_64-bzImage
+cp ./buildroot-${ver}/output/images/rootfs.tar ./x86_64-rootfs.tar
+cp ./buildroot-${ver}/output/images/rootfs.ext4 ./x86_64-rootfs.ext4
