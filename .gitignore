@@ -1,0 +1,8 @@
+# Sources
+buildroot*
+
+# Built targets
+*.dtb
+zImage
+*.ext*
+*.tar*
