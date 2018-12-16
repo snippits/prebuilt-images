@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/snippits/vpmu_controller
+	branch = master
+	commit = 93136c77d851c098581f73c2c822caa06af58466
+	parent = 9d9e0a36a027fc5c6f2b7507b1f361c7152097be
+	method = merge
+	update = auto
+	cmdver = 0.4.1
