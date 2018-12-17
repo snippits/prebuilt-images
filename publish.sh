@@ -29,7 +29,7 @@ release_id=$(curl -sL -X POST \
   \"tag_name\": \"v${VERSION}\",
   \"target_commitish\": \"master\",
   \"name\": \"v${VERSION}\",
-  \"body\": \"# \`AXIOM-beta Linux kernel releases\` @ ${VERSION}\",
+  \"body\": \"# \`Snippits Linux image releases \` @ ${VERSION}\",
   \"draft\": false,
   \"prerelease\": false
 }" "https://api.github.com/repos/${REPO}/releases" | jq -r ".id")
