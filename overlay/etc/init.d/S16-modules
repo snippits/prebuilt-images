@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "/etc/init.d/S16-modules Loading VPMU device module"
+echo "............................................"
+insmod /usr/lib/vpmu-device.ko
