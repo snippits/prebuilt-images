@@ -1,6 +1,7 @@
 # Sources
 buildroot*
 linux*
+rootfs
 
 # Built targets
 *.dtb
