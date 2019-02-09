@@ -6,8 +6,8 @@
 [subrepo]
 	remote = https://github.com/snippits/vpmu_controller
 	branch = master
-	commit = 93136c77d851c098581f73c2c822caa06af58466
-	parent = 9d9e0a36a027fc5c6f2b7507b1f361c7152097be
+	commit = 00d33baa36a58a2c2d0d61b8150831b2f36bdc6e
+	parent = 7d760380afd4b1076dec95ca883a4d189cf063db
 	method = merge
 	update = auto
 	cmdver = 0.4.1
